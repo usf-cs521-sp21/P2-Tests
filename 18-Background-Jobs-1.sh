@@ -5,12 +5,12 @@ run_timeout=2
 rn=${RANDOM}
 
 script=$(cat <<EOM
-${TEST_DIR}/inputs/scripts/sleeper.sh 500 &
-${TEST_DIR}/inputs/scripts/sleeper.sh 100 &
+${TEST_DIR}/inputs/sleeper.sh 500 &
+${TEST_DIR}/inputs/sleeper.sh 100 &
 echo Your lucky number is ${rn}
-${TEST_DIR}/inputs/scripts/sleeper.sh 85 &
-${TEST_DIR}/inputs/scripts/sleeper.sh 450 &
-${TEST_DIR}/inputs/scripts/kill-parent.sh
+${TEST_DIR}/inputs/sleeper.sh 85 &
+${TEST_DIR}/inputs/sleeper.sh 450 &
+${TEST_DIR}/inputs/kill-parent.sh
 EOM
 )
 
