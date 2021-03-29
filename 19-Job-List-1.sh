@@ -21,7 +21,8 @@ sleeper.sh 500
 EOM
 )
 
-test_start "Background job list"
+test_start "Background job list" \
+    "Requires working SIGINT handler to pass this test"
 
 # ---------- Test Script ----------
 echo "${script}"
