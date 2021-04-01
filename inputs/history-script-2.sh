@@ -1,12 +1,17 @@
+thisisacommandthatprobablydoesntexistbutletstryitanywayhuh
 echo Command 000
 echo Command 001
 echo Command 002
 echo Command 003
 echo Command 004
 echo Command 005
+
 echo Command 006
+
 echo Command 007
+
 echo Command 008
+
 echo Command 009
 echo Command 010
 echo Command 011
@@ -405,6 +410,7 @@ echo Command 403
 echo Command 404
 echo Command 405
 echo Command 406
+pwd
 echo Command 407
 echo Command 408
 echo Command 409
