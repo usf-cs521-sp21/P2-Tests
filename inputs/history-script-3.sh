@@ -1,3 +1,5 @@
+!542
+history
 echo Command 001
 echo Command 002
 echo Command 003
@@ -420,9 +422,9 @@ echo Command 419
 echo -----
 history
 echo -----
-!419
-!324
-!324
-!400
-!22
+!420
+!325
+!325
+!401
+!23
 !999
