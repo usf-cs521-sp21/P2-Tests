@@ -42,13 +42,16 @@ if ! ( which valgrind &> /dev/null ); then
     test_end 1
 fi
 
-leak_output=$(timeout ${run_timeout} valgrind \
+leak_output=$(timeout 10 valgrind \
     --trace-children=no \
     --child-silent-after-fork=yes \
     --leak-check=full \
     --track-fds=yes \
+    --show-leak-kinds=all \
     --track-origins=yes \
     ./$SHELL_NAME < <(echo "${script}") 2>&1)
+
+echo "${leak_output}"
 
 # Check for open FDs
 awk "${fd_check}" <<< "${leak_output}" \
