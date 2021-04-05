@@ -5,7 +5,7 @@ run_timeout 5
 trap '#^C Killed me!' INT
 
 script=$(cat <<EOM
-${TEST_DIR}/inputs/kill-parent.sh
+${TEST_DIR}/inputs/scripts/kill-parent.sh
 sleep 1
 echo The shell is still running!
 EOM
