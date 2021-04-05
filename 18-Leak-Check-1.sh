@@ -11,6 +11,7 @@ fd_check='
     }
 }' 
 
+rand=${RANDOM}
 script=$(cat <<EOM
 ls /
 !1
@@ -24,8 +25,8 @@ asdfghjklqprewopiqwualasdf # Bad Command!
 # Comment only
 pwd
 echo hi
-sort -r -n < /etc/passwd > /tmp/$RANDOM
-rm /tmp/$RANDOM
+sort -r -n < /etc/passwd > /tmp/$rand
+rm /tmp/$rand
 history
 !p
 
